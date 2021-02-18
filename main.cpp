@@ -1,3 +1,4 @@
+#include "matrice.hpp"
 #include "vecteur.h"
 #include <cmath>
 #include <iostream>

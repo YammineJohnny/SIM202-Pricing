@@ -10,20 +10,19 @@
 
 #include <stdio.h>
 
+using namespace std;
+
 class matrice{
     protected :
-    int dim_l, l_val;
+    int dim_l;
     int *p_inf;
     int *p_sup;
-    double *val;
+    vector< vector<double>> val;
     int pos(int i,int j) const{return j*dim_l+i;};//position de l'élément (i,j)
-    //double *adresse(int i, int j);   // adresse de l'élément (i,j)
     public :
-    matrice();
-    matrice(int dl,int dc, double x = 0);
+    matrice(int dim, int x=0);
     matrice(const matrice &);
     ~matrice();
-    void print();
 };
 
 
